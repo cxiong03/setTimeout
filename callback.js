@@ -3,6 +3,8 @@ function doHomework (subject, callback) {
     callback();
 }
 
-doHomework('math', function() {
+function alertFinished() {
     console.log('Finished my homework');
-});
+};
+
+doHomework('math', alertFinished);
