@@ -1,5 +1,8 @@
-function doHomework (subject) {
+function doHomework (subject, callback) {
     console.log(`Starting my ${subject} homework.`);
+    callback();
 }
 
-doHomework('math');
+doHomework('math', function() {
+    console.log('Finished my homework');
+});
